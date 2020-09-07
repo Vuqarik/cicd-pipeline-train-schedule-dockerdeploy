@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("vuqarik/train-schedule")
+                    app = docker.build("vugark/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
